@@ -1,14 +1,20 @@
 import os
 import zipfile
-project = input('Input the name of the project: ')
-os.chdir('C:/Users/admin/Desktop')
-if not os.path.isdir('./kaggle_data'):
-    os.mkdir('C:/Users/admin/Desktop/kaggle_data')
-os.chdir('C:/Users/admin/Desktop/kaggle_data')
-os.environ['KAGGLE_USERNAME'] = "korwinbieniek"
-os.environ['KAGGLE_KEY'] = "dff0699451f214d2508bbf04fe583fd5"
-os.system(f'kaggle competitions download -c {project}')
+from pathlib import Path
+from dotenv import load_dotenv
 
-with zipfile.ZipFile(f'C:/Users/admin/Desktop/kaggle_data/{project}.zip', 'r') as zip_ref:
-    zip_ref.extractall('C:/Users/admin/Desktop/kaggle_data')
+load_dotenv()
+data_dir = Path("./data")
+os.system('kaggle c list')
+project = input('Input the name of the project: ')
+project_dir = data_dir/project
+if not os.path.isdir(data_dir):
+    os.mkdir(data_dir)
+if not os.path.isdir(project_dir):
+    os.mkdir(project_dir)
+
+os.system(f'kaggle competitions download -c {project}')
+zip_file_path = f"./{project}.zip"
+with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+    zip_ref.extractall(project_dir)
 os.remove(f'{project}.zip')

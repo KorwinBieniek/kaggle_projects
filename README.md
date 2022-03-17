@@ -28,3 +28,13 @@ conda env create -f environment.yml
 
 
 # Questions
+
+# Projects
+- [ ] Wykrywanie pojazdów, zczytywanie tablic rejestracyjnych i odczytywanie danych na tablicy rejestracyjnej
+    - [ ] użyć gotowego modelu do wykrywania pojazdów
+    - [ ] Yolo/OpenCV
+    - [ ] wykrywanie tablic rejestracyjnych (sieć splotowa)
+    - [ ] Rozpoznawanie znaków na tablicy rejestracyjnej
+- [ ] MNIST data recognition
+  - [ ] Stworzyć 100 danych do nauki (po 10 dla każdej z cyfr)
+  - [ ] Użyć data augmentation aby manipulować danymi i stworzyć ich wariacje

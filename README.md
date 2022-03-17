@@ -14,7 +14,7 @@ conda env create -f environment.yml
     - [ ] duże obrazki 20kx20k tnij na mniejsze (przygotować skrypt pythonowy) RESEARCH 
     - [ ] format - yolo ma swój format - musisz to sprawdzić czy tu zadziała na tych etykietach
 - [ ] jupyter fix
-  - zaktualizuj pycharm
+  - [ ] zaktualizuj pycharm
 - [ ] Cifar do sprawdczenia
   - [x] Zmniejszyliśmy architekture i dziala szybciej i lepiej
   - [ ] można by odpalić z data augmentation (https://www.tensorflow.org/tutorials/images/data_augmentation)

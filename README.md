@@ -11,7 +11,7 @@ conda env create -f environment.yml
     - [ ] YOLO 5 wersji - docztać czym się różnią (liczba parametrów, funkcjonalność, zmienny rozmiar obrazka?) 
     - [ ] BASELINE MODEL FOR OBJECT DETECTION - byle by było
     - [ ] yolo in keras import transferlearning (wyślij mi linki)
-    - [ ] duże obrazki 20kx20k tnij na mniejsze (przygotować skrypt pythonowy) RESEARCH 
+    - [X] duże obrazki 20kx20k tnij na mniejsze (przygotować skrypt pythonowy) RESEARCH 
     - [ ] format - yolo ma swój format - musisz to sprawdzić czy tu zadziała na tych etykietach
 - [X] jupyter fix
   - [X] zaktualizuj pycharm

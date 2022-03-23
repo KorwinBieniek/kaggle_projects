@@ -3,7 +3,8 @@ Repo for projects from Kaggle website
 conda env create -f environment.yml
 
 # TODO 23.03.2022 - simple base line model for object detection in keras - shape detection:
-
+- [ ] **dodałem po lekcji - przeczytaj tę prezentacje: [Spatial Localization and
+Detection - Fei-Fei Li & Andrej Karpathy & Justin Johnson- Stanford Universit](http://cs231n.stanford.edu/slides/2016/winter1516_lecture8.pdf)** 
 - [ ] zamienić te metryki ious, dist, mse w notebooku `shape_detection.ipynb` na kerasowe metrki albo callbacki
 - [ ] rozwiązać ten błąd: InternalError: Failed copying input tensor from /job:localhost/replica:0/task:0/device:CPU:0 to /job:localhost/replica:0/task:0/device:GPU:0 in order to run _EagerConst: Dst tensor is not initialized.
 - [ ] przeczytać bloga https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491

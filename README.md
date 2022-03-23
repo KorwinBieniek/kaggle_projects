@@ -2,14 +2,24 @@
 Repo for projects from Kaggle website
 conda env create -f environment.yml
 
-# TODO:
+# TODO 23.03.2022 - simple base line model for object detection in keras - shape detection:
+
+- [ ] zamienić te metryki ious, dist, mse w notebooku `shape_detection.ipynb` na kerasowe metrki albo callbacki
+- [ ] rozwiązać ten błąd: InternalError: Failed copying input tensor from /job:localhost/replica:0/task:0/device:CPU:0 to /job:localhost/replica:0/task:0/device:GPU:0 in order to run _EagerConst: Dst tensor is not initialized.
+- [ ] przeczytać bloga https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491
+- [ ] obczaj jak zrobić wykrwanie dowolnej liczby obiektów
+- [ ] jak działać z obrazami o różnych rozmiarach
+- [ ] run yolo demo
+- [ ] znaleźć zbiór który ma takie same rozmiary i dwie klasy i małe obrazki 
+
+# TODO 20.03.2022 - ogarniecie dota i yolo:
 - [ ] Zdjęcia Satelitarne - yolo transfer learning + simple dataset
     - [ ] do którego folderu który zip trafił
     - [ ] sprytne wczytywanie (https://keras.io/api/preprocessing/image/)
     - [ ] na początek wybrać 1 kategorie (samochody) 
     - [ ] jak yolo rozwiązuje wykrywanie instancji i klasyfikacje instancji
     - [ ] YOLO 5 wersji - docztać czym się różnią (liczba parametrów, funkcjonalność, zmienny rozmiar obrazka?) 
-    - [ ] BASELINE MODEL FOR OBJECT DETECTION - byle by było
+    - [x] BASELINE MODEL FOR OBJECT DETECTION - byle by było
     - [ ] yolo in keras import transferlearning (wyślij mi linki)
     - [X] duże obrazki 20kx20k tnij na mniejsze (przygotować skrypt pythonowy) RESEARCH 
     - [ ] format - yolo ma swój format - musisz to sprawdzić czy tu zadziała na tych etykietach

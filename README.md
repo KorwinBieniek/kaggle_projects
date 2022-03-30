@@ -10,7 +10,7 @@ Detection - Fei-Fei Li & Andrej Karpathy & Justin Johnson- Stanford Universit](h
 - [ ] przeczytać bloga https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491
 - [ ] obczaj jak zrobić wykrwanie dowolnej liczby obiektów
 - [ ] jak działać z obrazami o różnych rozmiarach
-- [ ] run yolo demo
+- [x] run yolo demo
 - [ ] znaleźć zbiór który ma takie same rozmiary i dwie klasy i małe obrazki 
 
 # TODO 20.03.2022 - ogarniecie dota i yolo:

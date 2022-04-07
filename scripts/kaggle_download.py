@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-data_dir = Path("./data")
+data_dir = Path("../data")
 os.system('kaggle c list')
 project = input('Input the name of the project: ')
 project_dir = data_dir/project
